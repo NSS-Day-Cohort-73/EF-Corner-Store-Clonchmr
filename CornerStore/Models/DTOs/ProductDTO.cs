@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace CornerStore.Models;
+namespace CornerStore.Models.DTOs;
 
-public class Product
+public class ProductDTO
 {
     public int Id { get; set; }
     [Required]
@@ -11,6 +11,6 @@ public class Product
     [Required]
     public string Brand { get; set; }
     public int CategoryId { get; set; }
-    public Category Category { get; set; }
+    public CategoryDTO Category { get; set; }
     
 }
